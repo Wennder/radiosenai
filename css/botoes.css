@@ -1,0 +1,122 @@
+/* 
+    Document   : botoes
+    Created on : 03/03/2013, 00:52:09
+    Author     : Vinícius
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.text{
+    color: #333333;
+    background-color: #cccccc;
+    border: black solid 1px;
+    border-radius: 2px;
+}
+.text:focus{
+    outline-color: blue;
+}
+
+.btn-verde{
+    background: #00cc00;
+    border: #006600 solid 1px;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ccffcc;
+    font-weight: bold;
+    box-shadow: black 1px 1px 6px;
+}
+.btn-verde:hover{
+    cursor: pointer;
+    border: #00cc00 solid 1px;
+    background: #006600;
+}
+.btn-verde:active{
+    cursor: wait;
+    box-shadow: black 1px 1px 3px;
+}
+.btn-vermelho{
+    background: #ff0000;
+    border: #990000 solid 1px;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ff9999;
+    font-weight: bold;
+    box-shadow: black 1px 1px 6px;
+}
+.btn-vermelho:hover{
+    cursor: pointer;
+    background: #990000;
+    border: #ff0000 solid 1px;
+}
+.btn-vermelho:active{
+    cursor: wait;
+    box-shadow: black 1px 1px 3px;
+}
+.btn-azul{
+    background: #0000cc;
+    border: #000066 solid 1px;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #9999ff;
+    font-weight: bold;
+    box-shadow: black 1px 1px 6px;
+}
+.btn-azul:hover{
+    cursor: pointer;
+    background: #000066;
+    border: #0000cc solid 1px;
+}
+.btn-azul:active{
+    cursor: wait;
+    box-shadow: black 1px 1px 3px;
+}
+.btn-cinza{
+    background: #999999;
+    border: #cccccc solid 1px;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: black 1px 1px 6px;
+}
+.btn-cinza:hover{
+    cursor: pointer;
+    background: #cccccc;
+    border: #999999 solid 1px;
+}
+.btn-cinza:active{
+    cursor: wait;
+    box-shadow: black 1px 1px 3px;
+}
+.btn-preto{
+    background: #333333;
+    border: #000000 solid 1px;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #cccccc;
+    font-weight: bold;
+    box-shadow: black 1px 1px 6px;
+}
+.btn-preto:hover{
+    cursor: pointer;
+    background: #000000;
+    border: #333333 solid 1px;
+}
+.btn-preto:active{
+    cursor: wait;
+    box-shadow: black 1px 1px 3px;
+}

@@ -1,0 +1,118 @@
+/* 
+    Document   : estilo_mobile
+    Created on : 01/03/2013, 22:52:32
+    Author     : Vinícius
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+/* 
+    Document   : estilo
+    Created on : 28/02/2013, 09:19:22
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /*background-color: #1d6b6b; */
+    background-image: url('../img/fundo.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    z-index: 0;
+    font-family: Arial;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #333333;
+    font-weight: bold;
+    text-shadow: #333333 1px 1px 2px;
+}
+
+#all{
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    width: 90%;
+    height: 50px;
+}
+
+#clear{
+    clear: both;
+}
+
+#esquerda{
+    display: none;
+    position: absolute;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 10%;
+    height: auto;
+    float: left;
+    text-align: center;
+    background: url('../img/fundo-menu.png');
+    padding-bottom: 90px;
+    border: black solid 2px;
+    z-index: 1;
+}
+#esquerda img{
+    width: 186px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-weight: bold;
+}
+#esquerda a{
+    display: inline-block;
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: bold;
+    text-shadow: black 2px 2px 2px;
+    background: none;
+    padding: 15px;
+    border: #cccccc black solid 10px;
+    border-right: none;
+    border-left: none;
+    margin-top: 25px;
+    width: 216px;
+    background: url('../img/btn-menu.png') 18px 0px no-repeat;
+}
+
+#direita{
+    /*width: 730px;*/
+    width: 100%;
+    height: auto;
+    padding-top: 36px;
+    background: url('../img/fundo_transparente.png');
+    text-align: center;
+    border-radius: 0 2px 2px 0;
+}
+.direita{
+    border-radius: 0 2px 2px 0;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+#direita img{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+    
+.btn-show-menu{
+    width: 80%;
+    height: 20px;
+}

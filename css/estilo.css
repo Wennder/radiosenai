@@ -1,0 +1,116 @@
+/* 
+    Document   : estilo
+    Created on : 28/02/2013, 09:19:22
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #2d2d2d;
+    font-weight: bold;
+    text-align: center;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: url('../img/fundo-repeat.jpg') fixed;
+    font-family: "Palatino Linotype", Arial, "Arial Black";
+}
+
+#all{
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    width: 980px;
+    height: 50px;
+}
+
+#clear{
+    clear: both;
+}
+
+#esquerda{
+    width: 186px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 90px;
+    position: fixed;
+    border-top: none;
+    border-bottom: none;
+    margin-top: -20px;
+    margin-right: 60px;
+}
+#esquerda img{
+    width: 186px;
+    background-size: cover;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #cccccc;
+    border: #000033 solid 2px;
+    padding: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: white;
+    border-radius: 3px;
+}
+#esquerda a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    padding: 15px;
+    margin-top: 25px;
+    width: 170px;/* 216px */
+    background-color: #0000ff;
+    border: #000033 solid 2px;
+    text-shadow: black 0px 0px 1px;
+    border-radius: 3px;
+    color: #ccccff;
+    font-size: 18px;
+}
+#esquerda a:hover{
+    border-color: #0000ff;
+    background-color: #000033;
+    cursor: pointer;
+}
+
+#direita{
+    width: 700px;
+    height: auto;
+    margin-left: 190px;
+    padding-top: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #ffffff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 0px 3px #000;
+    -webkit-box-shadow: 0px 0px 3px #000;
+    box-shadow: 0px 0px 3px #000;
+    opacity: 0.80;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 80);
+    filter: alpha(opacity = 80);
+}
+.direita{
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+#direita img{
+    margin-bottom: 40px;
+}
