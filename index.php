@@ -13,9 +13,10 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Rádio Senai</title>
         <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="css/reveal.css">
 		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
-		<script src="js/jquery-1.9.1.min.js"></script>
-		<script src="js/jquery-ui-1.9.2.custom.min.js"></script> 
+		<script src="js/jquery-1.4.4.min.js"></script>
+        <script src="js/jquery.reveal.js" type="text/javascript"></script>
 		<script src="js/skel.min.js">
 		{
 			prefix: 'css/style',
@@ -34,7 +35,7 @@
 <body> 
 <!--------------------HEADER----------------------------->
     <div id="header">
-        <img src="img/logo.png" class="ri"/>
+        <a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
          <div id="nav">
             <?php
                 $paginas = $sql->verPaginas();
@@ -52,8 +53,11 @@
                 Ouça nossa rádio
             </a>
             <a href="?pg=pedido">
-                Pedido online
+                Pedidos
             </a>
+            <a href="#" data-reveal-id="adminlogin">
+                Login
+             </a>
         </div>
     </div>
     
@@ -87,6 +91,19 @@
     <div class="12u" id="footer">
         Radio SENAI &copy; 2013<br>Todos os direitos reservados.
     </div>
+<!--------------------ADMIN LOGIN------------------------>
+<div id="adminlogin" class="reveal-modal">
+   <form action="user/" method="post">
+      <h1> Área Restrita </h1>
+          <table>
+              <input type="text" class="text" id="campo_login" name="usuario_login" placeholder="Usuário" style="width: 151px;"><br>
+              <input type="password" class="text" name="usuario_senha" placeholder="Senha" style="width: 151px;">
+         </table>
+        <input type="submit" value="Acessar" name="user_login_try" class="xbtn">
+        <input type="reset" value="Cancelar" class="xbtn" onclick="login()">
+    </form>
+<a class="close-reveal-modal">&#215;</a>
+</div>
     
 </body>
 </html>
