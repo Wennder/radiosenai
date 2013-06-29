@@ -26,7 +26,7 @@ class Sessao {
         if ($this->status == FALSE){ 
             echo '
             <script type="text/javascript">';
-            if (!isset($_GET['sair'])) echo 'alert("Acesso proibido!");
+            if (!isset($_GET['sair'])) echo 'alert("Acesso Negado!");
                 ';
             echo 'window.location = "../";
             </script>

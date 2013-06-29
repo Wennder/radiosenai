@@ -6,3 +6,7 @@
         $sessao->bloqueio();
     };
 ?>
+<center>
+<h2>Heading</h2>
+<p>RADIO AQUI !</p>
+</center>

@@ -119,6 +119,12 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 } 
 
+.img_integrante{
+    width: 190px;
+    height: 190px;
+    border: black solid 1px;
+}
+
 #footer {
 	color: #a3a3a3;
 	text-align: center;

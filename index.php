@@ -30,7 +30,7 @@
 				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
 			}
 		}
-		</script>
+        </script>
 </head>
 <body> 
 <!--------------------HEADER----------------------------->
@@ -49,9 +49,9 @@
              <a href="?pg=integrantes">
                 Integrantes
             </a>
-            <a href="?pg=radio">
+           <!--<a href="?pg=radio">
                 Ouça nossa rádio
-            </a>
+            </a>-->
             <a href="?pg=pedido">
                 Pedidos
             </a>
@@ -99,8 +99,8 @@
               <input type="text" class="text" id="campo_login" name="usuario_login" placeholder="Usuário" style="width: 151px;"><br>
               <input type="password" class="text" name="usuario_senha" placeholder="Senha" style="width: 151px;">
          </table>
-        <input type="submit" value="Acessar" name="user_login_try" class="xbtn">
-        <input type="reset" value="Cancelar" class="xbtn" onclick="login()">
+        <input type="submit" value="Acessar" name="user_login_try" class="btn">
+        <input type="reset" value="Cancelar" class="btn" onclick="login()">
     </form>
 <a class="close-reveal-modal">&#215;</a>
 </div>
