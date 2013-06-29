@@ -12,7 +12,15 @@ h1, h2, h3, h4, h5, h6 {
 #header {
     width: 100%;
  	text-align: center;
-    background-color: #d35400;
+	background-image: url("../img/header-bg1.jpg");
+	background-position-x: 50%;
+	-webkit-box-shadow: 0px 4px 8px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 8px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 8px rgba(50, 50, 50, 0.75);
+}
+
+#container {
+	padding-top: 250px;
 }
 
 #intro {
@@ -52,6 +60,7 @@ ul li{
 .box {
     background: #FFF;
 	padding: 30px;
+	margin-top: 50px;
     -webkit-border-bottom-right-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-bottomright: 3px;
