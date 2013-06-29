@@ -1,11 +1,3 @@
-/* 
-    Document   : estilo
-    Created on : 28/02/2013, 09:19:22
-    Author     : Administrador
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
 root { 
     display: block;
 }
@@ -25,7 +17,7 @@ body{
     padding: 0;
     margin: 0;
     text-align: center;
-    background: url('../img/fundo-repeat.jpg') fixed;
+    background: url('../img/bg.png') fixed;
     font-family: "Palatino Linotype", Arial, "Arial Black";
 }
 
