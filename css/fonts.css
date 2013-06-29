@@ -1,0 +1,43 @@
+@font-face {
+		font-family: "star_avenueregular";
+		src: url("fonts/Star Avenue.eot");
+		src: url("fonts/Star Avenue.eot?#iefix") format("embedded-opentype"),
+             url("fonts/Star Avenue.svg#star_avenueregular") format("svg"),
+			 url("fonts/Star Avenue.woff") format("woff"),
+			 url("fonts/Star Avenue.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntu-titletitle";
+		src: url("fonts/ubuntu-title-webfont.eot");
+		src: url("fonts/ubuntu-title-webfont.eot?#iefix") format("embedded-opentype"),
+             url("fonts/ubuntu-ttle-webfont.svg#ubuntu-titletitle") format("svg"),
+			 url("fonts/ubuntu-title-webfont.woff") format("woff"),
+			 url("fonts/ubuntu-title-webfont.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntu-title-frtitle-fr";
+  src: url("fonts/ubuntu-title-fr-1.1-webfont.eot");
+  src: url("fonts/ubuntu-title-fr-1.1-webfont.eot?#iefix") format("embedded-opentype"),
+       url("fonts/ubuntu-title-fr-1.1-webfont.svg#ubuntu-title-frtitle-fr") format("svg"),
+       url("fonts/ubuntu-title-fr-1.1-webfont.woff") format("woff"),
+       url("fonts/ubuntu-title-fr-1.1-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+		font-family: "myriadprolight";
+		src: url("fonts/MyriadPro-Light.eot");
+		src: url("fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"),
+             url("fonts/MyriadPro-Light.svg#MyriadPro-Light") format("svg"),
+			 url("fonts/MyriadPro-Light.woff") format("woff"),
+			 url("fonts/MyriadPro-Light.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+}

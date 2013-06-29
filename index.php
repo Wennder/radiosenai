@@ -13,81 +13,31 @@
         <link rel="stylesheet" type="text/css" href="css/divs.css">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Rádio Senai</title>
-        <script src="js/jquery.js"></script>
-        <script type="text/javascript">
-            // Funções para android
-                function android() {
-                        navegadorTotal = navigator.userAgent.toLowerCase();	
-                        //Confere se é iphone, ipod e ipad, android, symbian, mobile
-                        if(navegadorTotal.indexOf("iphone") != "-1" ||
-                        navegadorTotal.indexOf("ipad") != "-1" ||
-                        navegadorTotal.indexOf("ipod") != "-1" ||
-                        navegadorTotal.indexOf("android") != "-1" ||
-                        navegadorTotal.indexOf("j2me") != "-1" ||
-                        navegadorTotal.indexOf("nokia") != "-1" ||
-                        navegadorTotal.indexOf("symbianos") != "-1" ||
-                        navegadorTotal.indexOf("opera mini") != "-1" ||
-                        navegadorTotal.indexOf("mobile") != "-1" ||
-                        navegadorTotal.indexOf("mobi") != "-1"){
-                            return false;// Mudar para true
-                        }else{
-                            return false;
-                        }
-                }
-                function loadCSS(url) {
-                    var lnk = document.createElement('link');
-                    lnk.setAttribute('type', "text/css" );
-                    lnk.setAttribute('rel', "stylesheet" );
-                    lnk.setAttribute('href', url );
-                    document.getElementsByTagName("head").item(0).appendChild(lnk);
-                }
-
-                if (android()){
-                    loadCSS('css/estilo_mobile.css');
-                    $('#esquerda').hide();
-                } else {
-                    loadCSS('css/estilo.css');
-                }
-
-                function menu(){
-                    $('#esquerda').show();
-                }
-            // Funções gerais
-                // Functions login
-                    var fundo = false;
-                    function fundo_preto(){
-                        if (fundo==false){
-                            $('#fundo-preto').fadeIn(500);
-                            fundo = true;
-                        } else {
-                            $('#fundo-preto').fadeOut(500);
-                            fundo = false;
-                        }
-                    }
-
-                    var l = false;
-                    function login(){
-                        fundo_preto();
-                        if (l==false){
-                            $('#login').fadeIn(500);
-                            $('#campo_login').focus();
-                            l = true;
-                        } else {
-                            $('#login').fadeOut(500);
-                            l = false;
-                        }
-                    }                
-                // Login
-                $(document).on('keypress', function(e){
-                    if(e.which==12){
-                        login();
-                    }
-                });    
-        </script>
+        <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/content.js" type="text/javascript"></script>
+		<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			/*grid: { gutters: 0 },*/
+			breakpoints: {
+				wide: { range: '1200-', containers: 1190, grid: { gutters: 0 } },
+				narrow: { range: '481-1199', containers: 960, grid: { gutters: 0 } },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
     </head>
-    <body>
-        <div id="fundo-preto"></div>
-        <script type="text/javascript">$('#fundo-preto').fadeOut(0);</script>
+    <body>     
+        <!--
+		<div id="fundo-preto"></div>
+		<script type="text/javascript">$('#fundo-preto').fadeOut(0);</script>
             <div id="login">
                 <form action="user/" method="post">
                     <h1> Área Restrita </h1>
@@ -113,35 +63,35 @@
                     <input type="reset" value="Cancelar" class="btn-vermelho" onclick="login()">
                 </form>
             </div>
-            <script type="text/javascript">$('#login').fadeOut(0);</script>
-        <div id="all">
-            
-            <div id="header">
-                <img src="img/logo.png">
-                 <div class="tnav">
-                     
-                <?php
-                    $paginas = $sql->verPaginas();
-                    foreach ($paginas as $pagina){
-                        echo '
-                                <a href="?pg='.$pagina['id'].'">
-                                    '.$pagina['nome'].'
-                             ';
-                    }
-                ?> 
-                 <a href="?pg=integrantes">
-                    Integrantes
-                </a>
-                <a href="?pg=radio">
-                    Ouça nossa rádio
-                </a>
-                <a href="?pg=pedido">
-                    Pedido online
-                </a>
-                </div>
+            <script type="text/javascript">$('#login').fadeOut(0);</script>-->
+        <div class="container">
+            <div class="12u">
+				<div id="header">
+					<img src="img/logo.png">
+					 <div class="tnav">
+						 
+					<?php
+						$paginas = $sql->verPaginas();
+						foreach ($paginas as $pagina){
+							echo '
+									<a href="?pg='.$pagina['id'].'">
+										'.$pagina['nome'].'
+								 ';
+						}
+					?> 
+					 <a href="?pg=integrantes">
+						Integrantes
+					</a>
+					<a href="?pg=radio">
+						Ouça nossa rádio
+					</a>
+					<a href="?pg=pedido">
+						Pedido online
+					</a>
+					</div>
+				</div>
             </div>
-            
-            <div id="direita" class="direita">
+            <div class="12u">
                 <?php
                     if (isset($_GET['pg'])){
                         $pagina = $_GET['pg'];
@@ -167,6 +117,5 @@
                 ?>
             </div>
         </div>
-        <div id="clear"></div>
     </body>
 </html>
