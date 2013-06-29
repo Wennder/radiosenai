@@ -12,16 +12,12 @@
     }
         .nova_pagina label{
             font-size: 22px;
-            border: black solid 1px;
             padding: 10px;
             padding-left: 20px;
             padding-right: 20px;
             font-weight: bold;
-            border-radius: 2px 2px 0 0;
         }
         .nova_pagina form{
-            border: black solid 1px;
-            border-radius: 2px;
             padding-bottom: 15px;
             margin-top: 9px;
         }
@@ -32,7 +28,7 @@
             margin-top: 10px;
         }
         .nova_pagina table input{
-            width: 300px;
+            width: 500px;
             margin-left: 15px;
         }
         .nova_pagina table textArea{
@@ -51,14 +47,12 @@
     }
 </script>
 <div class="nova_pagina">
-    <label>
-        Cadastro de página
-    </label>
     <form action="" method="post" class="edt_pagina">
         <table>
+            <h2>Nova Página</h2>
             <tr>
                 <td>
-                    Nome da página:
+                    Nome:
                 </td>
                 <td>
                     <input type="text" name="nome_pagina" class="text" maxlength="20">
@@ -66,14 +60,15 @@
             </tr>
             <tr>
                 <td>
-                    Conteúdo da página:
+                    Conteúdo:
                 </td>
                 <td>
                     <textarea class="text" name="conteudo_pagina" maxlength="10000"></textarea>
                 </td>
             </tr>
         </table>
-        <input type="submit" name="nova_pagina" value="Cadastrar" class="btn-verde">
-        <input type="reset" value="Cancelar" onclick="cancelNovaPagina()" class="btn-vermelho">
+        <input type="submit" name="nova_pagina" value="Cadastrar" class="button medium green">
+        <input type="reset" value="Cancelar" onclick="cancelNovaPagina()" class="button medium red">
     </form>
+    <hr>
 </div>

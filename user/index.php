@@ -12,7 +12,8 @@
         <link rel="stylesheet" type="text/css" href="../css/botoes.css">
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Rádio Senai</title>
-        <link rel="stylesheet" href="../css/fonts.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/buttons.css">
 		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
 		<script src="../js/jquery-1.4.4.min.js"></script>
 		<script src="../js/skel.min.js">

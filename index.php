@@ -12,8 +12,8 @@
         <link rel="stylesheet" type="text/css" href="css/botoes.css">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Rádio Senai</title>
-        <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
-        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/buttons.css">
 		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
 		<script src="js/jquery-1.4.4.min.js"></script>
         <script src="js/jquery.reveal.js" type="text/javascript"></script>
@@ -96,11 +96,11 @@
    <form action="user/" method="post">
       <h1> Área Restrita </h1>
           <table>
-              <input type="text" class="text" id="campo_login" name="usuario_login" placeholder="Usuário" style="width: 151px;"><br>
-              <input type="password" class="text" name="usuario_senha" placeholder="Senha" style="width: 151px;">
+              <input type="text" class="text" id="campo_login" name="usuario_login" placeholder="Usuário" style="width: 200px;"><br>
+              <input type="password" class="text" name="usuario_senha" placeholder="Senha" style="width: 200px;">
          </table>
-        <input type="submit" value="Acessar" name="user_login_try" class="btn">
-        <input type="reset" value="Cancelar" class="btn" onclick="login()">
+        <input type="submit" value="Acessar" name="user_login_try" class="button small green">
+        <input type="reset" value="Cancelar" class="button small red" onclick="login()">
     </form>
 <a class="close-reveal-modal">&#215;</a>
 </div>

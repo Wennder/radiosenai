@@ -1,6 +1,6 @@
 body {
 	background: #ecf0f1;
-	color: #959595;
+	color: #646363;
 	font-family: "myriadprolight";
     background-image: url("../img/bg.png");	
 }
@@ -17,6 +17,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro {
     width:auto;
+}
+
+ul li{
+    list-style-image: url('../img/item.png');
+    list-style-position: inside;
+}
+
+#clear{
+    clear: both;
 }
 
 .ri {
@@ -43,9 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 .box {
     background: #FFF;
 	padding: 30px;
-    /*-moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;*/
     -webkit-border-bottom-right-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-bottomright: 3px;
@@ -55,22 +61,6 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-shadow: 0px 0px 3px #000000;
     -webkit-box-shadow: 0px 0px 3px #000000;
     box-shadow: 0px 0px 3px #000000;
-    opacity: 0.80;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 80);
-    filter: alpha(opacity = 80);
-}
-
-#hero {
-    color: #FFF;
-    font-family: "ubuntu-title-frtitle-fr";
-	background-image: url(../img/bgintro.png);
-    background-position-y: 50%;
-    background-position-x: 50%;
-	text-align: center;
-}
-
-#ubuntu{
-    color: #DD4814;
 }
 
 #adminlogin{
@@ -120,13 +110,13 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .img_integrante{
-    width: 190px;
-    height: 190px;
+    max-width: 190px;
+    max-height: 190px;
     border: black solid 1px;
 }
 
 #footer {
-	color: #a3a3a3;
+	color: #000;
 	text-align: center;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
 }

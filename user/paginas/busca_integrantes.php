@@ -49,13 +49,13 @@
             if (isset($_GET['admin'])){
                 ?>
                 <div>
-                    <button class="btn-verde" onclick="editar_imagem_integrante(<?php echo $integrante['id']; ?>);" style="padding-left: 15.5px; padding-right: 15.5px;">
+                    <button class="button green" onclick="editar_imagem_integrante(<?php echo $integrante['id']; ?>);" style="padding-left: 15.5px; padding-right: 15.5px;">
                         Alt. Imagem
                     </button>
-                    <button class="btn-azul" onclick="editar_integrante(<?php echo $integrante['id']; ?>)" style="margin-top: 5px; margin-right: -5px;">
+                    <button class="button blue" onclick="editar_integrante(<?php echo $integrante['id']; ?>)" style="margin-top: 5px; margin-right: -5px;">
                         Editar
                     </button>
-                    <button class="btn-vermelho" onclick="delIntegrante(<?php echo $integrante['id']; ?>);">
+                    <button class="button red" onclick="delIntegrante(<?php echo $integrante['id']; ?>);">
                         X
                     </button>
                 </div>

@@ -14,15 +14,17 @@
         float: left;
     }
     #novo_int{
-        float: left;
-        margin-top: 26px;
-        margin-left: 35px;
+        float: right;
+        margin-right: 35px;
     }
     #proc_int{
         text-align: center;
     }
     #busca_integrantes{
         text-align: center;
+    }
+    #intss{
+        margin: 0 auto;
     }
 </style>
 <script type="text/javascript">
@@ -51,10 +53,10 @@
 <h1>
     Integrantes da rádio
 </h1>
-<button onclick="novo_int();" class="btn-azul" id="novo_int">
+<button onclick="novo_int();" class="button blue" id="novo_int">
     Novo integrante
 </button>
-<br id="clear" />
+<br id="clear"/>
 <div id="proc_int">
     <?php
         if (isset($_GET['id'])) {
@@ -104,4 +106,5 @@
         } else echo '<h2>O campo nome é obrigatório</h2>';
     }
 ?>
+<hr>
 <div id="busca_integrantes"></div>

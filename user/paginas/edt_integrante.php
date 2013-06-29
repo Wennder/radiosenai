@@ -13,13 +13,16 @@
     if ($integrante == FALSE) die ('<h1>Erro</h1>');
 ?>
 <style>
+    table{
+        margin: 0 auto;
+    }
     table tr td input{
         width: 500px;
         margin-left: 20px;
         padding: 0;
     }
     table tr td textarea{
-        width: 496px;
+        width: 500px;
         height: 150px;
         margin-left: 20px;
         resize: vertical;
@@ -33,9 +36,10 @@
         });
     }
 </script>
+<hr>
 <div class="form">
-    <label>Edição de integrante</label>
     <form action="?pg=integrantes" method="post">
+        <h2>Editar Integrante</h2>
         <table>
             <tr>
                 <td>
@@ -56,7 +60,7 @@
             <tr>
         </table><br />
         <input type="hidden" name="id_integrante" value="<?php echo $integrante->id; ?>">
-        <input type="submit" name="form_edt_integrante" value="Salvar" class="btn-verde">
-        <input type="reset" value="Cancelar" class="btn-vermelho" onclick="fechar_edt_integrante();">
+        <input type="submit" name="form_edt_integrante" value="Salvar" class="button medium green">
+        <input type="reset" value="Cancelar" class="button medium red" onclick="fechar_edt_integrante();">
     </form>
 </div>

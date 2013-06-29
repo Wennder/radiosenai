@@ -18,20 +18,17 @@
         float: left;
     }
     #nova_pagina{
-        float: left;
-        margin-top: 26px;
-        margin-left: 35px;
+        float: right;
     }
     .paginaInicial{
         float: left;
-        margin-top: 30px;
-        margin-left: 35px;
+        margin-bottom: 30px;
         font-size: 20px;
         font-weight: bold;
     }
     #paginaInicial{
         float: left;
-        margin-top: 27px;
+        margin-bottom: 30px;
         margin-left: 10px;
         padding: 5px;
     }
@@ -77,23 +74,10 @@
     }
 </script>
 <h1>Páginas</h1>
-<button onclick="nova_pagina();" id="nova_pagina" class="btn-cinza">
+<button onclick="nova_pagina();" id="nova_pagina" class="button blue">
     Nova Página
-</button>
-<label class="paginaInicial">
-    Página Inicial: 
-</label>
-<select id="paginaInicial" class="text" onchange="paginaInicial();">
-    <option value="0">Aleatória</option>
-    <?php
-        $pgs = $sql->verPaginas();
-        foreach ($pgs as $pg) {
-            echo '<option value="'.$pg['id'].'"';
-            if ($pg['inicial']) echo ' SELECTED';
-            echo '>'.$pg['nome'].'</option>';
-        }
-    ?>
-</select><div id="msgErro" class="paginaInicial"></div><br id="clear" />
+</button><br>
+<hr>
 <div id="proc_pagina">
     <?php
         if (isset($_POST['edt_pagina'])){
@@ -114,6 +98,21 @@
         }
     ?>
 </div>
+<label class="paginaInicial">
+    Página Inicial: 
+</label>
+    <select id="paginaInicial" class="text" onchange="paginaInicial();">
+        <option value="0">Aleatória</option>
+        <?php
+            $pgs = $sql->verPaginas();
+            foreach ($pgs as $pg) {
+                echo '<option value="'.$pg['id'].'"';
+                if ($pg['inicial']) echo ' SELECTED';
+                echo '>'.$pg['nome'].'</option>';
+            }
+        ?>
+    </select>
+<div id="msgErro" class="paginaInicial"></div>
     <?php
     $pgs = $sql->verPaginas();
     echo '<table style="width: 100%; font-weight: bold;">';
@@ -137,10 +136,10 @@
                 </select>
             </td>
             <td style="width: 165px;">
-                <button onclick="editar_pagina(this);" class="btn-azul" value="<?php echo $pg['id']; ?>">
+                <button onclick="editar_pagina(this);" class="button blue" value="<?php echo $pg['id']; ?>">
                     Editar
                 </button>
-                <button onclick="deletar_pagina(this);" class="btn-vermelho" value="<?php echo $pg['id']; ?>">
+                <button onclick="deletar_pagina(this);" class="button red" value="<?php echo $pg['id']; ?>">
                     Deletar
                 </button>
             </td>

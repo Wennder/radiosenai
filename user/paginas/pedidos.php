@@ -57,14 +57,11 @@
         float: left;
     }
     #btnDelAll{
-        float: left;
-        margin-top: 26px;
-        margin-left: 35px;
+        float: right;
     }
     #btnAtualizar{
-        float: left;
-        margin-top: 26px;
-        margin-left: 20px;
+        float: right;
+        margin-right: 20px;
     }
     #proc_pedido{
         text-align: center;
@@ -78,8 +75,8 @@
     }
 </style>
     <h1>Pedidos</h1>
-    <button id="btnDelAll" onclick="delAllPed()" class="btn-preto">Deletar todos os pedidos</button>
-    <button id="btnAtualizar" onclick="verPedidos()" class="btn-verde">Atualizar</button>
-    <br id="clear" />
+    <button id="btnDelAll" onclick="delAllPed()" class="button black">Deletar todos os pedidos</button>
+    <button id="btnAtualizar" onclick="verPedidos()" class="button green">Atualizar</button>
+    <br id="clear"/><hr>
     <div id="proc_pedido"></div>
     <div id="pedidos"></div>

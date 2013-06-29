@@ -42,7 +42,6 @@
                     }
                     .tableP tr td{
                         font-weight: bold;
-                        width: 130px;
                         text-align: left;
                     }
                     .form{
@@ -54,7 +53,7 @@
                     <table class="tableP">
                         <tr>
                             <td>
-                                Seu Nome:
+                                Nome:    
                             </td>
                             <td>
                                 <input value="<?php if (isset($nome)) echo $nome; ?>" type="text" name="nome" class="text textT" maxlength="40">
@@ -62,7 +61,16 @@
                         </tr>
                         <tr>
                             <td>
-                                Nome da Música:
+                                Artista:
+                            </td>
+                            <td>
+                                <input value="<?php if (isset($artista)) echo $artista; ?>" type="text" name="artista" class="text textT" maxlength="40">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Música:  
                             </td>
                             <td>
                                 <input value="<?php if (isset($musica)) echo $musica; ?>" type="text" name="musica" class="text textT" maxlength="40">
@@ -70,21 +78,16 @@
                         </tr>
                         <tr>
                             <td>
-                                Nome do Artista:
-                            </td>
-                            <td>
-                                <input value="<?php if (isset($artista)) echo $artista; ?>" type="text" name="artista" class="text textT" maxlength="40">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Seu Recado:
+                                Recado:  
                             </td>
                             <td>
                                 <textarea name="recado" class="text textT" maxlength="400"><?php if (isset($recado)) echo $recado; ?></textarea>
                             </td>
                         </tr>
                     </table>
-                    <input type="submit" class="btn-verde" value="Enviar" name="pedido">
-                    <input type="reset" class="btn-vermelho" onclick="window.location = '?'" value="Cancelar">
-                </form><br /><br /><br />
+                    <input type="submit" class="button medium green" value="Enviar" name="pedido">
+                    <input type="reset" class="button medium red" onclick="window.location = '?'" value="Cancelar">
+                </form>
+<br />
+<br />
+<br />

@@ -13,10 +13,30 @@
         padding: 0;
     }
     table tr td textarea{
-        width: 496px;
+        width: 500px;
         height: 150px;
         margin-left: 20px;
         resize: vertical;
+    }
+    .form{
+    margin-bottom: 30px;
+}
+    .form label{
+        font-size: 22px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+    .form form{
+        padding-bottom: 15px;
+        margin-top: 9px;
+    }
+    .form table{
+        text-align: left;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 </style>
 <script type="text/javascript">
@@ -37,9 +57,10 @@
     });
 </script>
 <div class="form">
-    <label>Novo integrante</label>
     <form action="" method="post" enctype="multipart/form-data">
         <table>
+            <h2>Novo integrante</h2>
+            <hr>
             <tr>
                 <td>
                     Nome:
@@ -62,13 +83,13 @@
                 </td>
                 <td style="text-align: center;">
                     <input type="file" name="foto_integrante" id="inputFile">
-                    <input type="button" onclick="javascript: $('#inputFile').trigger('click');" value="Selecionar foto para integrante" class="btn-cinza">
+                    <input type="button" onclick="javascript: $('#inputFile').trigger('click');" value="Selecionar foto para integrante" class="button black">
                     <br /><br />
                     <label id="imgNome" style="margin: 0 auto;">Nenhuma imagem selecionada</label>
                 </td>
             </tr>
         </table><br />
-        <input type="submit" name="form_novo_integrante" value="Cadastrar" class="btn-verde">
-        <input type="reset" value="Cancelar" class="btn-vermelho" onclick="fechar_novo_integrante();">
+        <input type="submit" name="form_novo_integrante" value="Cadastrar" class="button medium green">
+        <input type="reset" value="Cancelar" class="button medium red" onclick="fechar_novo_integrante();">
     </form>
 </div>

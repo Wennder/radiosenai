@@ -16,16 +16,12 @@ $pg = $sql->buscaPagina($_GET['id']);
     }
         .edt_pagina label{
             font-size: 22px;
-            border: black solid 1px;
             padding: 10px;
             padding-left: 20px;
             padding-right: 20px;
             font-weight: bold;
-            border-radius: 2px 2px 0 0;
         }
         .edt_pagina form{
-            border: black solid 1px;
-            border-radius: 2px;
             padding-bottom: 15px;
             margin-top: 9px;
         }
@@ -34,9 +30,10 @@ $pg = $sql->buscaPagina($_GET['id']);
             font-weight: bold;
             margin-top: 10px;
             margin-left: 10px;
+            margin: 0 auto;
         }
         .edt_pagina table input{
-            width: 300px;
+            width: 500px;
             margin-left: 15px;
         }
         .edt_pagina table textArea{
@@ -55,10 +52,10 @@ $pg = $sql->buscaPagina($_GET['id']);
     }
 </script>
 <div class="edt_pagina">
-    <label>
-        Edição de página
-    </label>
     <form action="" method="post" class="edt_pagina">
+    <h2>
+        Edição de página
+    </h2>
         <table>
             <tr>
                 <td>
@@ -78,7 +75,8 @@ $pg = $sql->buscaPagina($_GET['id']);
             </tr>
         </table>
         <input type="hidden" name="id_pagina" value="<?php echo $pg->id; ?>">
-        <input type="submit" name="edt_pagina" value="Salvar" class="btn-verde">
-        <input type="reset" value="Cancelar" onclick="cancelAltPagina()" class="btn-vermelho">
+        <input type="submit" name="edt_pagina" value="Salvar" class="button medium green">
+        <input type="reset" value="Cancelar" onclick="cancelAltPagina()" class="button medium red">
     </form>
+    <hr>
 </div>
