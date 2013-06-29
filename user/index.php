@@ -7,102 +7,68 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="../css/botoes.css">
-        <link rel="stylesheet" type="text/css" href="../css/divs.css">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Rádio Senai - Área restrita</title>
-        <script src="../jquery.js"></script>
-        <script type="text/javascript">
-            // Funções para android
-                function android() {
-                        navegadorTotal = navigator.userAgent.toLowerCase();	
-                        //Confere se é iphone, ipod e ipad, android, symbian, mobile
-                        if(navegadorTotal.indexOf("iphone") != "-1" ||
-                        navegadorTotal.indexOf("ipad") != "-1" ||
-                        navegadorTotal.indexOf("ipod") != "-1" ||
-                        navegadorTotal.indexOf("android") != "-1" ||
-                        navegadorTotal.indexOf("j2me") != "-1" ||
-                        navegadorTotal.indexOf("nokia") != "-1" ||
-                        navegadorTotal.indexOf("symbianos") != "-1" ||
-                        navegadorTotal.indexOf("opera mini") != "-1" ||
-                        navegadorTotal.indexOf("mobile") != "-1" ||
-                        navegadorTotal.indexOf("mobi") != "-1"){
-                            return false;// Mudar para true
-                        }else{
-                            return false;
-                        }
-                }
-                function loadCSS(url) {
-                    var lnk = document.createElement('link');
-                    lnk.setAttribute('type', "text/css" );
-                    lnk.setAttribute('rel', "stylesheet" );
-                    lnk.setAttribute('href', url );
-                    document.getElementsByTagName("head").item(0).appendChild(lnk);
-                }
-
-                if (android()){
-                    loadCSS('../css/estilo_mobile.css');
-                    $('#esquerda').hide();
-                } else {
-                    loadCSS('../css/estilo.css');
-                }
-
-                function menu(){
-                    $('#esquerda').show();
-                }
-            // Funções gerais
-                var fundo = false;
-                function fundo_preto(){
-                    if (fundo==false){
-                        $('#fundo-preto').fadeIn(500);
-                        fundo = true;
-                    } else {
-                        $('#fundo-preto').fadeOut(500);
-                        fundo = false;
-                    }
-                }
-            $(document).ready(function(){
-                $('#fundo-preto').fadeOut(0);
-            });
-        </script>
-    </head>
-    <body>
-        <div id="fundo-preto"></div>
-        <div id="all">
-            <div id="esquerda">
-                <img src="../img/senai.png"><br />
+        <title>Rádio Senai</title>
+        <link rel="stylesheet" href="../css/fonts.css" type="text/css" charset="utf-8" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/jquery-ui-1.9.2.custom.min.js"></script> 
+		<script src="../js/skel.min.js">
+		{
+			prefix: '../css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			/*grid: { gutters: 0 },*/
+			breakpoints: {
+				wide: { range: '1200-', containers: 1190, grid: { gutters: 0 } },
+				narrow: { range: '481-1199', containers: 960, grid: { gutters: 0 } },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+</head>
+<body>
+<!--------------------HEADER----------------------------->
+       <div id="header">
+        <img src="../img/logo.png" class="ri"/>
+         <div id="nav">
                 <a href="?pg=inicio">
                     Início
-                </a><br />
+                </a>
                 <a href="?pg=paginas">
                     Páginas
-                </a><br />
+                </a>
                 <a href="?pg=integrantes">
                     Integrantes
-                </a><br />
+                </a>
                 <a href="?pg=pedidos">
                     Pedidos
-                </a><br />
+                </a>
                 <a href="?sair">
                     Sair
                 </a>
-            </div>
-            <div id="direita">
-                <img src="../img/logo.png">
-            </div><div id="direita" class="direita">
-                <?php
-                    if (isset($_GET['pg'])) $pagina = $_GET['pg'];
-                        else $pagina = 'inicio';
-                        $pagina = 'paginas/'.$pagina.'.php';
-                    if (is_file($pagina)){
-                        include_once $pagina;
-                    } else echo '<h1>Erro 404</h1><br /><h2>Página não existente</h2>';
-                    
-                ?>
-            </div>
+           </div>
         </div>
-        <div id="clear"></div>
-    </body>
+<!--------------------MAIN----------------------------->
+        <div class="container box">
+            <?php
+                if (isset($_GET['pg'])) $pagina = $_GET['pg'];
+                    else $pagina = 'inicio';
+                    $pagina = 'paginas/'.$pagina.'.php';
+                if (is_file($pagina)){
+                    include_once $pagina;
+                } else echo '<h1>Erro 404</h1><br /><h2>Página não existente</h2>';
+                
+            ?>
+        </div>
+<!--------------------FOOTER----------------------------->
+    <div class="12u" id="footer">
+        Radio SENAI &copy; 2013<br>Todos os direitos reservados.
+    </div>
+    
+</body>
 </html>

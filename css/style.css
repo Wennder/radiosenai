@@ -10,7 +10,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 #header {
+    width: 100%;
  	text-align: center;
+    background-color: #d35400;
 }
 
 #intro {
@@ -28,34 +30,28 @@ h1, h2, h3, h4, h5, h6 {
   .ri { max-height: 90%; }
 }
 
-#nav a {
-    color: #fff;
-	font-style: bold;
-	text-decoration: none;
-}
 #nav {
 	text-align: center;
 }
 #nav a {
-    color: #7b7b7b;
-    font-family: star_avenueregular;
+    color: #FFF;
+	font-style: bold;
+	text-decoration: none;
+    font-family: 'ubuntu-title-frtitle-fr';
 }
 
-#nav .ativo {
-	color: #2b81c0;
-    text-decoration: none;
-}
-
-#nav .mousehover {
-    color: #b7b7b7;
-}
 .box {
-    background: #ffffff;
-    /*border-bottom: solid 2px #ccc;*/
+    background: #FFF;
 	padding: 30px;
-    -moz-border-radius: 2px;
+    /*-moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 2px;*/
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
     -moz-box-shadow: 0px 0px 3px #000000;
     -webkit-box-shadow: 0px 0px 3px #000000;
     box-shadow: 0px 0px 3px #000000;
@@ -65,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero {
-    color: #ffffff;
+    color: #FFF;
     font-family: "ubuntu-title-frtitle-fr";
 	background-image: url(../img/bgintro.png);
     background-position-y: 50%;
@@ -78,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer {
-	color: #62696c;
+	color: #a3a3a3;
 	text-align: center;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }

@@ -19,19 +19,15 @@ h2 {
 }
 
 #header {
-	margin-top: 3em;
 }
 
 #nav {
-    margin: 2em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 #nav a {
-	font-size: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-#nav .ativo {
-	font-size: 80px;
+	font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #hero {
@@ -51,5 +47,5 @@ h2 {
 }
 
 #footer {
-	margin: 3em 0 3em 0;
+	margin: 3em 0 1em 0;
 }
