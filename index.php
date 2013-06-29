@@ -18,6 +18,7 @@
 		<script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/content.js" type="text/javascript"></script>
 		<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+		<script src="js/bootstrap.min"></script>
         
 		<script src="js/skel.min.js">
 		{
@@ -34,36 +35,7 @@
 		}
 		</script>
     </head>
-    <body>     
-        <!--
-		<div id="fundo-preto"></div>
-		<script type="text/javascript">$('#fundo-preto').fadeOut(0);</script>
-            <div id="login">
-                <form action="user/" method="post">
-                    <h1> Área Restrita </h1>
-                    <table>
-                        <tr>
-                            <td>
-                                Usuário:
-                            </td>
-                            <td>
-                                <input type="text" class="text" id="campo_login" name="usuario_login" style="width: 151px;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Senha:
-                            </td>
-                            <td>
-                                <input type="password" class="text" name="usuario_senha" style="width: 151px;">
-                            </td>
-                        </tr>
-                    </table>
-                    <input type="submit" value="Acessar" name="user_login_try" class="btn-verde">
-                    <input type="reset" value="Cancelar" class="btn-vermelho" onclick="login()">
-                </form>
-            </div>
-            <script type="text/javascript">$('#login').fadeOut(0);</script>-->
+    <body>
         <div class="container">
             <div class="12u">
 				<div id="header">
@@ -91,7 +63,7 @@
 					</div>
 				</div>
             </div>
-            <div class="12u">
+            <div class="12u box">
                 <?php
                     if (isset($_GET['pg'])){
                         $pagina = $_GET['pg'];
@@ -115,6 +87,33 @@
                         } else echo $inicial;
                     }
                 ?>
+                
+                    
+            <div>
+                <form action="user/" method="post">
+                    <h1> Área Restrita </h1>
+                    <table>
+                        <tr>
+                            <td>
+                                Usuário:
+                            </td>
+                            <td>
+                                <input type="text" class="text" id="campo_login" name="usuario_login" style="width: 151px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Senha:
+                            </td>
+                            <td>
+                                <input type="password" class="text" name="usuario_senha" style="width: 151px;">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Acessar" name="user_login_try" class="btn-verde">
+                    <input type="reset" value="Cancelar" class="btn-vermelho" onclick="login()">
+                </form>
+            </div>
             </div>
         </div>
     </body>

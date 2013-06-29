@@ -2,113 +2,37 @@ root {
     display: block;
 }
 
-.text{
-    color: #333333;
-    background-color: #cccccc;
-    border: black solid 1px;
-    border-radius: 2px;
-}
-.text:focus{
-    outline-color: blue;
+.btn {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(219,87,5,1);
+    font-family: 'myriadprolight;
+    font-weight: 700;
+    font-size: 3em;
+    display: block;
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 100px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
 }
 
-.btn-verde{
-    background: #00cc00;
-    border: #006600 solid 1px;
-    border-radius: 2px;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #ccffcc;
-    font-weight: bold;
-    box-shadow: black 1px 1px 6px;
-}
-.btn-verde:hover{
-    cursor: pointer;
-    border: #00cc00 solid 1px;
-    background: #006600;
-}
-.btn-verde:active{
-    cursor: wait;
-    box-shadow: black 1px 1px 3px;
-}
-.btn-vermelho{
-    background: #ff0000;
-    border: #990000 solid 1px;
-    border-radius: 2px;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #ff9999;
-    font-weight: bold;
-    box-shadow: black 1px 1px 6px;
-}
-.btn-vermelho:hover{
-    cursor: pointer;
-    background: #990000;
-    border: #ff0000 solid 1px;
-}
-.btn-vermelho:active{
-    cursor: wait;
-    box-shadow: black 1px 1px 3px;
-}
-.btn-azul{
-    background: #0000cc;
-    border: #000066 solid 1px;
-    border-radius: 2px;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #9999ff;
-    font-weight: bold;
-    box-shadow: black 1px 1px 6px;
-}
-.btn-azul:hover{
-    cursor: pointer;
-    background: #000066;
-    border: #0000cc solid 1px;
-}
-.btn-azul:active{
-    cursor: wait;
-    box-shadow: black 1px 1px 3px;
-}
-.btn-cinza{
-    background: #999999;
-    border: #cccccc solid 1px;
-    border-radius: 2px;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #000000;
-    font-weight: bold;
-    box-shadow: black 1px 1px 6px;
-}
-.btn-cinza:hover{
-    cursor: pointer;
-    background: #cccccc;
-    border: #999999 solid 1px;
-}
-.btn-cinza:active{
-    cursor: wait;
-    box-shadow: black 1px 1px 3px;
-}
-.btn-preto{
-    background: #333333;
-    border: #000000 solid 1px;
-    border-radius: 2px;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #cccccc;
-    font-weight: bold;
-    box-shadow: black 1px 1px 6px;
-}
-.btn-preto:hover{
-    cursor: pointer;
-    background: #000000;
-    border: #333333 solid 1px;
-}
-.btn-preto:active{
-    cursor: wait;
-    box-shadow: black 1px 1px 3px;
+.btn:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
 }
