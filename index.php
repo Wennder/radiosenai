@@ -35,6 +35,7 @@
 <body> 
 <!--------------------HEADER----------------------------->
     <div id="header">
+<<<<<<< HEAD
         <div id="header_logo">
 			<a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
 		</div>
@@ -50,6 +51,19 @@
 				<a href="#" data-reveal-id="adminlogin">Login</a>
 			</div>
 		</div>
+=======
+        <a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
+         <div id="nav">
+            <?php
+                $paginas = $sql->verPaginas();
+                foreach ($paginas as $pagina){ echo '<a href="?pg='.$pagina['id'].'">'.$pagina['nome'].'</a>'; }
+            ?>
+            <a href="?pg=integrantes">Integrantes</a>
+            <a href="?pg=radio">Ouça agora</a>
+            <a href="?pg=pedido">Pedidos</a>
+            <a href="#" data-reveal-id="adminlogin">Login</a>
+        </div>
+>>>>>>> d5f33543b6da237b27db1cd08640e4900a25e6df
     </div>
     
 <!--------------------MAIN----------------------------->
