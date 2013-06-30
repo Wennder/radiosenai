@@ -1,3 +1,7 @@
+root { 
+    display: block;
+}
+
 body {
 	background: #ecf0f1;
 	color: #646363;

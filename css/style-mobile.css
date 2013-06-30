@@ -1,3 +1,7 @@
+root { 
+    display: block;
+}
+
 body {
 	font-size: 12.5pt;
 	line-height: 1.5em;
@@ -19,8 +23,8 @@ section {
 
 #nav a {
 	font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #footer {

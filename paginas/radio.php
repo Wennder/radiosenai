@@ -8,5 +8,5 @@
 ?>
 <center>
 <h2>Heading</h2>
-<p>RADIO AQUI !</p>
+<p><audio controls="controls" autoplay="true" src="http://thalesog.no-ip.info:8000/;"></audio></p>
 </center>

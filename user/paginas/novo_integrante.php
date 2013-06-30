@@ -60,7 +60,6 @@
     <form action="" method="post" enctype="multipart/form-data">
         <table>
             <h2>Novo integrante</h2>
-            <hr>
             <tr>
                 <td>
                     Nome:
@@ -92,4 +91,5 @@
         <input type="submit" name="form_novo_integrante" value="Cadastrar" class="button medium green">
         <input type="reset" value="Cancelar" class="button medium red" onclick="fechar_novo_integrante();">
     </form>
+    <hr>
 </div>

@@ -56,7 +56,7 @@
 <button onclick="novo_int();" class="button blue" id="novo_int">
     Novo integrante
 </button>
-<br id="clear"/>
+<br id="clear"/><hr>
 <div id="proc_int">
     <?php
         if (isset($_GET['id'])) {
@@ -106,5 +106,4 @@
         } else echo '<h2>O campo nome é obrigatório</h2>';
     }
 ?>
-<hr>
 <div id="busca_integrantes"></div>
