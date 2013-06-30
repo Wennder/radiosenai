@@ -41,3 +41,14 @@
 		font-weight: normal;
 		font-style: normal;
 }
+
+@font-face {
+    font-family: "swiss924_btregular";
+    src: url("fonts/swiss_924_bt-webfont.eot");
+    src: url("fonts/swiss_924_bt-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("fonts/swiss_924_bt-webfont.svg#swiss924_btregular") format("svg"),
+         url("fonts/swiss_924_bt-webfont.woff") format("woff"),
+         url("fonts/swiss_924_bt-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

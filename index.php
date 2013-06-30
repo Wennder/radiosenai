@@ -35,30 +35,21 @@
 <body> 
 <!--------------------HEADER----------------------------->
     <div id="header">
-        <a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
-         <div id="nav">
-            <?php
-                $paginas = $sql->verPaginas();
-                foreach ($paginas as $pagina){
-                    echo '
-                            <a href="?pg='.$pagina['id'].'">
-                                '.$pagina['nome'].'
-                         ';
-                }
-            ?> 
-             <a href="?pg=integrantes">
-                Integrantes
-            </a>
-           <!--<a href="?pg=radio">
-                Ouça nossa rádio
-            </a>-->
-            <a href="?pg=pedido">
-                Pedidos
-            </a>
-            <a href="#" data-reveal-id="adminlogin">
-                Login
-             </a>
-        </div>
+        <div id="header_logo">
+			<a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
+		</div>
+		<div id="nav">
+			<div id="header_nav">
+				<?php
+					$paginas = $sql->verPaginas();
+					foreach ($paginas as $pagina){ echo '<a href="?pg='.$pagina['id'].'">'.$pagina['nome'].'</a>'; }
+				?>
+				<a href="?pg=integrantes">Integrantes</a>
+				<a href="?pg=radio">Ouça agora</a>
+				<a href="?pg=pedido">Pedidos</a>
+				<a href="#" data-reveal-id="adminlogin">Login</a>
+			</div>
+		</div>
     </div>
     
 <!--------------------MAIN----------------------------->
@@ -71,7 +62,9 @@
                         $pagina = 'paginas/'.$pagina.'.php';
                         if (is_file($pagina)){
                             include_once $pagina;
-                        } else echo '<h1>Erro 404</h1><br /><h2>Página não existente</h2>';
+                        } else echo '<center><h1>Erro 404</h1><br/><p>A Página que você procura não existe, redirecionando para home.</p><br/>
+                <img src="img/carregando.gif"/></center>
+                <meta http-equiv="refresh" content="4; url=?pg=1">';
                 }
             } else {
                 $inicial = $sql->buscaPaginaInicial();

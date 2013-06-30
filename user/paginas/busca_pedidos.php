@@ -19,20 +19,20 @@
                         <?php echo '<b>'.$pd['musica'].' - </b>'.$pd['artista']; ?>
                     </td>
                     <td>
-                        <button onclick="verMais(this);" class="btn-azul" value="<?php echo $pd['id']; ?>">
+                        <button onclick="verMais(this);" class="button blue" value="<?php echo $pd['id']; ?>">
                             Ver Mais
                         </button>
-                        <button onclick="delPedido(this);" class="btn-vermelho" value="<?php echo $pd['id']; ?>">
+                        <button onclick="delPedido(this);" class="button red" value="<?php echo $pd['id']; ?>">
                             X
                         </button>
                     </td>
                 </tr>
-                <tr id="pdVerMais<?php echo $pd['id']; ?>">
-                    <td>
+                <tr id="pdVerMais<?php echo $pd['id']; ?>" style="display: none">
+                   <td>
                         <b>De: </b><?php echo $pd['nome']; ?>
                     </td>
                     <td>
-                        <p style="width: 200px;">
+                        <p style="width: 350px;">
                             <b>Recado: </b><?php echo $pd['recado']; ?>
                         </p>
                     </td>
