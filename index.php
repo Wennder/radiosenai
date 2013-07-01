@@ -25,7 +25,7 @@
 			boxModel: 'border',
 			/*grid: { gutters: 0 },*/
 			breakpoints: {
-				wide: { range: '1200-', containers: 1190, grid: { gutters: 0 } },
+				wide: { range: '1200-', containers: 1200, grid: { gutters: 0 } },
 				narrow: { range: '481-1199', containers: 960, grid: { gutters: 0 } },
 				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
 			}
@@ -35,7 +35,6 @@
 <body> 
 <!--------------------HEADER----------------------------->
     <div id="header">
-<<<<<<< HEAD
         <div id="header_logo">
 			<a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
 		</div>
@@ -51,19 +50,6 @@
 				<a href="#" data-reveal-id="adminlogin">Login</a>
 			</div>
 		</div>
-=======
-        <a href="?pg=1"><img src="img/logo.png" class="ri"/></a>
-         <div id="nav">
-            <?php
-                $paginas = $sql->verPaginas();
-                foreach ($paginas as $pagina){ echo '<a href="?pg='.$pagina['id'].'">'.$pagina['nome'].'</a>'; }
-            ?>
-            <a href="?pg=integrantes">Integrantes</a>
-            <a href="?pg=radio">Ouça agora</a>
-            <a href="?pg=pedido">Pedidos</a>
-            <a href="#" data-reveal-id="adminlogin">Login</a>
-        </div>
->>>>>>> d5f33543b6da237b27db1cd08640e4900a25e6df
     </div>
     
 <!--------------------MAIN----------------------------->

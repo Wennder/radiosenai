@@ -24,11 +24,7 @@ ul li{
     margin: 1em 0 0 0;
 }
 #nav a {
-<<<<<<< HEAD
 	font-size: 60px;
-=======
-	font-size: 40px;
->>>>>>> d5f33543b6da237b27db1cd08640e4900a25e6df
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -47,5 +43,5 @@ ul li{
 	margin-top: 32px;
 }
 #footer {
-	margin: 3em 0 1em 0;
+	margin: 3em 0 0em 0;
 }
